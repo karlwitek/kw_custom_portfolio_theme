@@ -1,0 +1,119 @@
+div.kwcpt-form-container {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#kwcpt-contact-form {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 3vh;
+  width: 50%;
+}
+
+#kwcpt-contact-form h3 {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#kwcpt-contact-form input {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 6px;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: block;
+  width: 80%;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+#kwcpt-contact-text-area {
+  display: block;
+  width: 80%;
+  padding: 6px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-height: 80px;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+#kwcpt-contact-form input:focus,
+#kwcpt-contact-text-area:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+  outline: none;
+  color: #000;
+}
+
+#kwcpt-submit-btn {
+  font-size: 22px;
+  color: #ff6900;
+  padding: 5px 25px;
+  margin-left:10%;
+  background-color: #fff;
+  border: 0.5px solid #000;
+  box-shadow: 3px 3px 2px rgba(255, 255, 255, 0.6);
+}
+
+@keyframes btn-push {
+  0% { transform: translate(0px, 0px);
+       box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.6); }
+  20% { transform: translate(2px, 2px);
+        box-shadow: 0 0 0; }
+  100% { transform: translate(0px, 0px);
+         box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.6); }
+}
+
+#kwcpt-submit-btn.kwcpt-pushed-btn {
+  animation: 300ms linear 10ms btn-push;
+}
+
+#kwcpt-comment-message {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div#kwcpt-user-message-container {
+  width: 100%;
+  padding-bottom: 6vh;
+}
+
+p#kwcpt-user-message {
+  width: max-content;
+  padding: 3vh;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+p#kwcpt-user-message.kwcpt-show-submit-message {
+  opacity: 1;
+  color: #fff;
+}
+
+/*  breakpoints for form   */
+
+@media (width <= 1200px) {
+  #kwcpt-contact-form {
+    width: 70%;
+  }
+}
+
+@media (width <= 700px) {
+  #kwcpt-contact-form {
+    padding: 2px;
+    width: 96%;
+  }
+
+  #kwcpt-submit-btn {
+    font-size: 18px;
+    padding: 1vh;
+  }
+}
