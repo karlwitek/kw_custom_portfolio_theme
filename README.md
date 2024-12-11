@@ -1,0 +1,1 @@
+This repository contains the source code for my custom Classic Wordpress Theme, designed specifically for my portfolio website.
