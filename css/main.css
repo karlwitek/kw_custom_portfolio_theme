@@ -79,6 +79,7 @@ ul.kwcpt-top-menu li a:hover {
 /* body of front page */ 
 
 div#kwcpt-parent-container {
+  height: 150vh;
   padding: 0;
   margin: 0;
   display: flex;
