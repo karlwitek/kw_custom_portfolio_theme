@@ -98,10 +98,3 @@ function register_header_menu()
 
 add_action('after_setup_theme', 'register_header_menu');
 
-
-function register_gallery_footer_menu()
-{
-  register_nav_menu('footer-menu', 'Footer Menu Location');
-}
-
-add_action('after_setup_theme', 'register_gallery_footer_menu');
