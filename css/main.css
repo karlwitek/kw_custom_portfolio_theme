@@ -86,7 +86,8 @@ div#kwcpt-parent-container {
 }
 
 div.kwcpt-content-container {
-  height: 100vh;
+  height: fit-content;
+  padding-bottom: 3vw;
   flex: 5;
   margin: 4vw 4vw 4vw 8vw;
   background: rgba(0, 0, 0, 0.2);
@@ -135,7 +136,7 @@ div.kwcpt-inner-nav-container h3 {
 
 /*  breakpoints for front page   */
 
-@media screen and (width <=1200px) {
+@media screen and (width <=1300px) {
 
   div.kwcpt-content-container {
     margin: 4vw 2vw 4vw 4vw; 
